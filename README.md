@@ -105,3 +105,26 @@ Here is a working screenshot of the Flask web UI:
 ```bash
 git clone https://github.com/varunsardana/MLProject.git
 cd MLProject
+
+
+### Step 2: Install Dependencies
+Create and activate a virtual environment (optional but recommended):
+
+python -m venv venv
+source venv/bin/activate  # On Windows: venv\Scripts\activate
+
+
+Then install the required packages:
+pip install -r requirements.txt
+
+### Step 3 Train the model
+python src/pipeline/train_pipeline.py
+
+### Step 4 Run the FLask App
+
+python application.py
+
+Go to your browswer and go to: http://127.0.0.1:5000/predictdata
+
+You’ll see a form where you can enter student info. Once submitted, the predicted Math score will appear below.
+
